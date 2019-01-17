@@ -11,7 +11,8 @@ public class calc{
 		do{
 			System.out.println("1. ADD TWO NUMBERS");
 			System.out.println("2. SUBTRACT TWO NUMBERS");
-			System.out.println("3. QUIT");
+			System.out.println("3. MULTIPLY TWO NUMBERS");
+			System.out.println("4. QUIT");
 			System.out.println("Select an option");
 
 			ch = scan.next().charAt(0);
@@ -31,7 +32,14 @@ public class calc{
 						System.out.println("Res = " + res);
 						break;
 
-				 case '3': //System.out.print.ln("Enter two numbers separated by space...");
+				case '3': System.out.println("Enter two numbers separated by space...");
+						a=scan.nextFloat();
+						b=scan.nextFloat();
+						res= a*b;
+						System.out.println("Res = " + res);
+						break;
+
+				 case '4': //System.out.print.ln("Enter two numbers separated by space...");
 				// 		a=scan.nextFloat();
 				// 		b=scan.nextFloat();
 				// 		res= a+b;
